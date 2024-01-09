@@ -4,14 +4,17 @@
     padding: 0;
 }
 
+ul li{
+    list-style: none;
+}
+
 header{
     position: fixed;
     display: flex;
     width: 100%;
     height: 70px;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
-    line-height: 70px;
     z-index: 1900;
 }
 
@@ -19,24 +22,107 @@ header{
     width: 200px;
     height: 100%;
     color: aliceblue;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 60px;
 }
 
 nav{
     width: 800px;
     height: 100%;
-    background-color: aliceblue;
+    position: relative;
+    z-index: 8;
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.band{
+    width: 100%;
+    top: 70px;
+    height: 210px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 7;
+    display: none;
+}
+
+.main{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+}
+
+.main li{
+    float: left;
+    width: 150px;
+    line-height: 70px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.main li:hover{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.sub{
+    margin-left: -32px;
+}
+
+.sub li{
+    background-color: #333333;
+    color: #FFFFFF;
+    display: none;
+}
+
+.sub li:hover{
+    background-color: #ffffff;
+    color: #333333;
 }
 
 .login{
     width: 200px;
     height: 100%;
     color: aliceblue;
+    line-height: 70px;
+    text-align: center;
+}
+
+.login button{
+    width: 100px;
+    height: 35px;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    line-height: 35px;
+}
+
+.login svg{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 7px;
+    margin-left: 9px;
+}
+
+.login p{
+    font-size: 18px;
+    font-weight: 800;
 }
 
 .back{
     width: 100%;
     height: 600px;
     background-color: aquamarine;
+}
+
+.back img{
+    width: 100%;
+    height: 100%;
 }
 
 .icon{
