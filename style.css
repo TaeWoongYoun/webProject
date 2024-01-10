@@ -188,6 +188,7 @@ nav a{
     overflow: hidden;
     top: 150px;
     right: 10%;
+    z-index: 100;
 }
 
 .imgSlide img{
@@ -202,15 +203,79 @@ nav a{
 }
 
 .doubleSlide{
-    width: 50%;
+    width: 75%;
     height: 100%;
     float: left;
 }
 
+.gall{
+    top: 180px;
+    position: relative;
+    width: 1000px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.window{
+    position: absolute;
+    width: 3032px;
+    height: 450px;
+    animation: 8s infinite linear window;
+    margin-left: -32px;
+}
+
+.window > li{
+    border-radius: 25px;
+    width: 490px;
+    margin-right: 10px;
+    height: 450px;
+    float: left;
+    /* z-index: 10000; */
+}
+
+@keyframes window{
+    0%{
+        left: 0%;
+    }
+
+    40%{
+        left: 0%;
+    }
+
+    50%{
+        left: -500px;
+    }
+
+    90%{
+        left: -500px;
+    }
+
+    100%{
+        left: -1000px;
+    }
+}
+
 .contentText{
-    width: 50%;
+    width: 25%;
     height: 100%;
     float: left;
+    padding-left: 15px;
+}
+
+.contentText h1{
+    margin-top: 220px;
+    font-weight: 900;
+}
+
+.contentText svg{
+    margin-top: -10px;
+    margin-left: -5px;
+    width: 40px;
+    height: 40px;
+}
+
+.contentText h5{
+    margin-top: 50px;
 }
 
 .mainContent{
