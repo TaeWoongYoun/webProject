@@ -25,6 +25,12 @@ header{
     font-size: 54px;
     font-weight: 800;
     line-height: 60px;
+    cursor: pointer;
+}
+
+.logo a{
+    text-decoration: none;
+    color: inherit;
 }
 
 nav{
@@ -52,7 +58,9 @@ nav a{
 .main{
     position: absolute;
     z-index: 1;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .main li{
@@ -189,6 +197,7 @@ nav a{
     top: 150px;
     right: 10%;
     z-index: 100;
+    box-shadow: 3px 3px 3px black;
 }
 
 .imgSlide img{
@@ -199,7 +208,7 @@ nav a{
 .content{
     width: 100%;
     height: 730px;
-    background-color: antiquewhite;
+    background-color: aliceblue;
 }
 
 .doubleSlide{
@@ -224,12 +233,13 @@ nav a{
     margin-left: -32px;
 }
 
-.window > li{
+.window > li img{
     border-radius: 25px;
     width: 490px;
     margin-right: 10px;
     height: 450px;
     float: left;
+    box-shadow: 3px 3px 3px black;
     /* z-index: 10000; */
 }
 
@@ -281,21 +291,19 @@ nav a{
 
 .mainContent{
     width: 100%;
-    height: 600px;
-    background-color: bisque;
+    height: 750px;
+    background-color: rgb(212, 235, 255);
 }
 
 .notice{
     width: 100%;
     height: 400px;
-    background-color: aliceblue;
     display: flex;
 }
 
 .noticeText{
     width: 30%;
     height: 100%;
-    background-color: cornsilk;
 }
 
 .noticeText h1{
@@ -319,7 +327,7 @@ nav a{
 }
 
 .conBox{
-    width: 700px;
+    width: 1200px;
     height: 150px;
     border-radius: 20px;
     display: flex;
@@ -328,21 +336,128 @@ nav a{
 }
 
 .con1{
-    width: 300px;
-    height: 150px;
-    background-color: #333333;
+    width: 400px;
+    height: 200px;
     margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px black;
+}
+
+.con1 iframe{
+    width: 100%;
+    height: 100%;
 }
 
 .con2{
-    width: 300px;
-    height: 150px;
-    background-color: #FFFFFF;
+    width: 400px;
+    height: 200px;
     margin: 10px;
+    margin-left: 4%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px black;
+}
+
+.con2 iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.widthBar{
+    width: 95%;
+    height: 300px;
+    background: linear-gradient(to left, aqua, blue);
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+}
+
+.wbox button{
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    border: none;
+    background-color: aliceblue;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 35px;
+    margin-left: 30%;
+}
+
+.wbox button:nth-child(1){
+    margin-right: 30%;
+}
+
+
+.wbox svg{
+    margin-top: -5px;
+}
+
+.wBox1{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+.wBox2{
+    width: 60%;
+    height: 100%;
 }
 
 footer{
     width: 100%;
-    height: 150px;
+    height: 100px;
     background-color: #333333;
+    display: flex;
 }
+
+.foo1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foo2{
+    width: 60%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.foo3{
+    width: 20%;
+    height: 100%;
+}
+
+.foo31{
+    width: 100%;
+    height: 50%;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foo32{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foo32 svg{
+    width: 40px;
+    height: 40px;
+    cursor: wait;
+}
+
